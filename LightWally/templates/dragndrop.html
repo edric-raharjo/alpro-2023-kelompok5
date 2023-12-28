@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightWally</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="hero">
+    <form action="/upload" method="post" enctype="multipart/form-data" id="uploadForm">
+        <div id="drop-area">
+            <input type="file" accept="image/*" id="input-file" name="file" hidden>
+        
+            <div id="img-view">
+                <img src="{{ url_for('static', filename='icon.png') }}">
+                <p>Drag and drop<br>to upload Waldo</p>
+                <span>upload any Waldo from desktop</span>
+            </div>
+        </div>
+        <input type="submit" value="Submit" id="uploadButton">
+    </form>
+</div>
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
