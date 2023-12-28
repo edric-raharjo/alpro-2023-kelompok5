@@ -1,7 +1,7 @@
 import os
 
 from flask import Flask
-from Main import app as application
+from app import app as application
 
 
 if __name__ == "__main__":
