@@ -1,15 +1,20 @@
 from flask import Flask, render_template, request, redirect, url_for
 from infer import predict_waldo  # Import the function
-
+import os
 app = Flask(__name__)
 
 @app.route('/')
+def home():
+    return render_template('home.html')
+
+@app.route('/findwaldo')
 def index():
     return render_template('dragndrop.html')
 
 @app.route('/upload', methods=['POST'])
 def upload():
     try:
+        os.remove("static/prediction.jpg")
         if 'file' not in request.files:
             return 'No file part'
 

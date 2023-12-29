@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='home_style.css') }}">
+    </head>
+    <body>
+        <header>
+            <h1>LightWally</h1>
+        </header>
+        <section id = "introduction">
+            <div id = "container_head">
+                <h2>Where's Wally</h2>
+            </div>
+            <div id = "container">
+                <h3>"Where's Wally?" (also known as "Where's Waldo?" in North America) is a series of children's puzzle books created by English illustrator Martin Handford</h3>
+                <h3>The books consist of a series of detailed, double-page spread illustrations depicting large crowds of people doing a variety of things at a given location. The reader's challenge is to find a specific character named Wally (Waldo in North America), who is hidden within the scene.</h3>
+                <h3>LightWally assists people in finding Wally</h3>
+                <h3>To try LightWally, Click the image below!</h3>
+                <button onclick="location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D';" id="rickroll" class="float-left submit-button" >Click Me</button>
+                <a href="/findwaldo">
+                    <img src="{{ url_for('static', filename='waldo_hello.png') }}" alt="depression", width=600>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div id = "container">
+                <h3>Kelompok 5 Alpro II</h3>
+                <h3>Edric, Megananda, Nadiya    </h3>
+            </div>
+        </footer>
+    </body>
+</html>

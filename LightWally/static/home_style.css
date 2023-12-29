@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'monts';
+    src: url('Montserrat\ Regular\ 400.ttf');
+}
+
+html {
+    background-color: #FFFFE0;
+    background-image: url('8.jpg');
+}
+section#introduction {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+header {
+    font-family: 'monts';
+    margin: 15px;
+    padding: 20px;
+    background-color: rgba(250, 10, 30, 0.88);
+    border-radius: 14px;
+}
+
+h1 {
+    color:bisque;
+    font-size: 20px;
+    padding-left: 32px;
+}
+
+div#container {
+    padding: 0;
+    margin: 20px;
+    background: rgba(255,240,240,0.96);
+    border: 5px dashed rgba(240, 10, 22, .3);
+    border-radius: 10px;
+}
+
+div#container_head {
+    padding: 0;
+    margin: 20px;
+    background: rgba(240, 10, 10, .88);
+    border: 3px dashed  rgba(255,240,240,0.96);
+    border-radius: 10px;
+}
+
+h2 {
+    color: antiquewhite;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'monts';
+    text-align: center;
+}
+
+h3 {
+    font-size: 12px;
+    font-family: 'monts';
+    text-align: left;
+    padding-left: 3%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+button {
+
+    size: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+
+    padding: 5px;
+
+    font-family: 'monts';
+    font-size: 14px;
+
+    background-color: rgba(255,240,240,0.0);    ;
+    margin-bottom: 20px;
+
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    transition: 0.6s;
+}
+
+button#rickroll {
+    border-color: transparent;
+    color: rgba(255,240,240,0.96);
+    margin-top: 10px;
+}
+
